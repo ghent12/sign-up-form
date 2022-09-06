@@ -8,7 +8,23 @@ a {
   color: inherit;
 }
 
-#side-splash-caption 
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#side-splash {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/johannes-plenio-pFZx2htSMDE-unsplash.jpg");
+  background-position: center;
+  width: max(35%, 650px);
+  height: 100vh;
+  justify-content: space-around;
+}
+
+#side-splash-caption {
   background-color: rgba(25, 25, 25, 0.15);
   color: #eee;
   font-size: smaller;
@@ -18,20 +34,92 @@ a {
   text-align: center;
 }
 
+#logo-banner {
+  background-color: rgba(25, 25, 25, 0.35);
+  padding: 7px 0;
+  margin-bottom: max(280px, 35%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#logo-image {
+  text-align: center;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-right: 5px;
+}
+
 #logo-text {
   text-align: center;
   font-size: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-right: 10px;
 }
 
-#side-splash {
+.hero {
+  background-color: #dddddd;
+  padding: 10% 20% 20px 20px;
+}
+
+.form-card {
+  background-color: #eee;
+  box-shadow: 0px 5px 5px #999;
   display: flex;
   flex-direction: column;
-  position: relative;
-  background-image: url("./images/johannes-plenio-pFZx2htSMDE-unsplash.jpg");
-  background-position: center;
-  width: max(30%, 350px);
-  height: 100vh;
+  flex-wrap: wrap;
+  padding: 30px min(600px, 70%) 20px 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-pair1, .input-pair2, .input-pair3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+}
+
+input:focus {
+  border-color: #000;
+  border-radius: 0;
+}
+
+input:required {
+  box-shadow: 1px 1px 3px rgba(20,20,20,0.5);
+  
+}
+
+input:required:invalid {
+  box-shadow:3px 3px 5px rgba(240,40,40,0.7);
+}
+
+.required-caption {
+  font-size: smaller;
+}
+
+#submit {
+  background-color: #e5a033;
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 4px;
+}
+#cta {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#cta>p {
+  margin-top: 8px;
 }
 
 footer {
