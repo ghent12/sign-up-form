@@ -71,9 +71,9 @@
   <main>
     <section>
       <div class="hero">
-        <h2>This is absolutely unreal! As in, it is not real. But your dreams might come true if you sign up! Sign up <em>now</em>, as in <em>right now</em> or you'll miss out!</h2>
+        <h2>This is absolutely unreal! As in, it is not a real online service. But your dreams might come true if you sign up! Sign up <em>now</em>, as in <em>right now</em> or you'll miss out!</h2>
         <br>
-        <h2>You will do this for me.</h2>
+        <h2>You will do this for me; of that I have complete faith.</h2>
       </div>
       <form action="#">
         <div class="form-card">
@@ -88,8 +88,8 @@
               <label for="phone">PHONE NUMBER<input type="text" id="phone" name="sign-up" placeholder="(555) 555-5555"></label>
             </div>
             <div class="input-pair3">
-              <label for="password1">* PASSWORD<input type="password" id="password1" name="sign-up" required></label>
-              <label for="password2">* CONFIRM PASSWORD<input type="password" id="password2" name="sign-up" required></label>
+              <label for="password1">* PASSWORD<input type="password" id="password1" name="sign-up" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain the following at minimum: one number, one uppercase, one lowercase, and at least 10 characters." required></label>
+              <label for="password2">* CONFIRM PASSWORD<input type="password" id="password2" name="sign-up" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain the following at minimum: one number, one uppercase, one lowercase, and at least 10 characters." required></label>
             </div>
             <p class="required-caption">* denotes required field</p>
           </div>
